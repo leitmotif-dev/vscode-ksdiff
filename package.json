@@ -13,7 +13,7 @@
     "url": "https://github.com/kaleidoscope-app/vscode-ksdiff"
   },
   "engines": {
-    "vscode": "^1.64.0"
+    "vscode": "^1.81.0"
   },
   "categories": [
     "Other"
