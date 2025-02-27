@@ -76,7 +76,7 @@
           "light": "img/kaleidoscope.svg",
           "dark": "img/kaleidoscope~dark.svg"
         },
-        "enablement": "editorIsOpen"
+        "enablement": "editorIsOpen && isMac"
       },
       {
         "command": "kaleidoscope.diffSelectedText",
@@ -90,7 +90,7 @@
           "light": "img/kaleidoscope.svg",
           "dark": "img/kaleidoscope~dark.svg"
         },
-        "enablement": "scmProvider == git  && scmResourceGroup != merge"
+        "enablement": "scmProvider == git  && scmResourceGroup != merge && isMac"
       },
       {
         "command": "kaleidoscope.showAllChangesFromScmTitle",
@@ -99,7 +99,7 @@
           "light": "img/kaleidoscope.svg",
           "dark": "img/kaleidoscope~dark.svg"
         },
-        "enablement": "scmProvider == git && gitOpenRepositoryCount != 0 && gitWorkingTreeChanges != 0"
+        "enablement": "scmProvider == git && gitOpenRepositoryCount != 0 && gitWorkingTreeChanges != 0 && isMac"
       },
       {
         "command": "kaleidoscope.showAllStagedChanges",
@@ -108,7 +108,7 @@
           "light": "img/kaleidoscope.svg",
           "dark": "img/kaleidoscope~dark.svg"
         },
-        "enablement": "scmProvider == git  && scmResourceGroup == index"
+        "enablement": "scmProvider == git  && scmResourceGroup == index && isMac"
       },
       {
         "command": "kaleidoscope.showAllUnstagedChanges",
@@ -117,7 +117,7 @@
           "light": "img/kaleidoscope.svg",
           "dark": "img/kaleidoscope~dark.svg"
         },
-        "enablement": "scmProvider == git && scmResourceGroup == workingTree"
+        "enablement": "scmProvider == git && scmResourceGroup == workingTree && isMac"
       },
       {
         "command": "kaleidoscope.showStagedChangesInFolder",
@@ -136,7 +136,7 @@
           "light": "img/kaleidoscope.svg",
           "dark": "img/kaleidoscope~dark.svg"
         },
-        "enablement": "scmProvider == git  && scmResourceGroup == merge"
+        "enablement": "scmProvider == git  && scmResourceGroup == merge && isMac"
       }
     ],
     "menus": {
@@ -144,76 +144,76 @@
         {
           "command": "kaleidoscope.diffSelectedText",
           "group": "3_compare",
-          "when": "editorHasSelection"
+          "when": "editorHasSelection && isMac"
         },
         {
           "command": "kaleidoscope.diff",
           "group": "3_compare",
-          "when": "!editorHasSelection"
+          "when": "!editorHasSelection && isMac"
         }
       ],
       "editor/title": [
         {
           "command": "kaleidoscope.diff",
           "group": "navigation",
-          "when": "editorIsOpen && activeCustomEditorId != 'vscode.audioPreview' && activeCustomEditorId != 'vscode.videoPreview' && activeCustomEditorId != 'vscode.markdown.preview' && resourceScheme != 'vscode-settings'"
+          "when": "editorIsOpen && activeCustomEditorId != 'vscode.audioPreview' && activeCustomEditorId != 'vscode.videoPreview' && activeCustomEditorId != 'vscode.markdown.preview' && resourceScheme != 'vscode-settings' && isMac"
         }
       ],
       "editor/title/context": [
         {
           "command": "kaleidoscope.diff",
           "group": "1_diff",
-          "when": "config.kaleidoscope.compareTool"
+          "when": "config.kaleidoscope.compareTool && isMac"
         }
       ],
       "explorer/context": [
         {
           "command": "kaleidoscope.diff",
           "group": "3_compare",
-          "when": "resourceScheme == 'file'"
+          "when": "resourceScheme == 'file' && isMac"
         }
       ],
       "scm/title": [
         {
           "command": "kaleidoscope.showAllChangesFromScmTitle",
           "group": "navigation",
-          "when": "scmProvider == git && gitOpenRepositoryCount != 0 && gitWorkingTreeChanges != 0"
+          "when": "scmProvider == git && gitOpenRepositoryCount != 0 && gitWorkingTreeChanges != 0 && isMac"
         }
       ],
       "scm/resourceFolder/context": [
         {
           "command": "kaleidoscope.showStagedChangesInFolder",
           "group": "navigation",
-          "when": "scmProvider == git && scmResourceGroup == index"
+          "when": "scmProvider == git && scmResourceGroup == index && isMac"
         },
         {
           "command": "kaleidoscope.showUnstagedChangesInFolder",
           "group": "navigation",
-          "when": "scmProvider == git && scmResourceGroup == workingTree"
+          "when": "scmProvider == git && scmResourceGroup == workingTree && isMac"
         }
       ],
       "scm/resourceGroup/context": [
         {
           "command": "kaleidoscope.showAllStagedChanges",
           "group": "inline",
-          "when": "scmProvider == git && scmResourceGroup == index"
+          "when": "scmProvider == git && scmResourceGroup == index && isMac"
         },
         {
           "command": "kaleidoscope.showAllUnstagedChanges",
           "group": "inline",
-          "when": "scmProvider == git && scmResourceGroup == workingTree"
+          "when": "scmProvider == git && scmResourceGroup == workingTree && isMac"
         }
       ],
       "scm/resourceState/context": [
         {
           "command": "kaleidoscope.diffScm",
           "group": "inline",
-          "when": "scmProvider == git && scmResourceGroup != merge"
+          "when": "scmProvider == git && scmResourceGroup != merge && isMac"
         },
         {
           "command": "kaleidoscope.mergeScm",
           "group": "inline",
-          "when": "scmProvider == git && scmResourceGroup == merge"
+          "when": "scmProvider == git && scmResourceGroup == merge && isMac"
         }
       ]
 
