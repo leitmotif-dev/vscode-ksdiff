@@ -29,7 +29,7 @@ The extension provides the following functionalities through a comprehensive set
 * Show git difftool results in Kaleidoscope or default diff tool defined
 * Run git mergetool in Kaleidoscope or default merge tool defined
 
-<img src="README/changeset-light.gif" alt="Running git difftool with Kaleidoscope" width="100%"  style="margin: 10px 0;">
+<img src="https://github.com/kaleidoscope-app/vscode-ksdiff/raw/main/README/changeset-light.gif" alt="Running git difftool with Kaleidoscope" width="100%"  style="margin: 10px 0;">
 
 ## How to use
 
@@ -74,8 +74,8 @@ The two latter settings require git to be configured correctly. This can be easi
 
 ### 1.1.0 - February 27, 2024
 
-* Major overhaul. Please report issues to hello@kaleidoscope.app, or provide pull request.
-* 
+* Major overhaul. Please report issues to hello@kaleidoscope.app, or fix and create a pull request.
+
 ### 1.0.2 - October 18, 2022
 
 * Bugfixes
