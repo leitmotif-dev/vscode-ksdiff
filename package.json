@@ -30,18 +30,6 @@
     "color": "#FFFFFF",
     "theme": "light"
   },
-  "activationEvents": [
-    "onCommand:kaleidoscope.diffFile",
-    "onCommand:kaleidoscope.diffSection",
-    "onCommand:kaleidoscope.diffScm",
-    "onCommand:kaleidoscope.mergeScm",
-    "onCommand:kaleidoscope.textCompareEditor",
-    "onCommand:kaleidoscope.showAllChangesFromScmTitle",
-    "onCommand:kaleidoscope.showAllStagedChanges",
-    "onCommand:kaleidoscope.showAllUnstagedChanges",
-    "onCommand:kaleidoscope.showStagedChangesInFolder",
-    "onCommand:kaleidoscope.showUnstagedChangesInFolder"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
